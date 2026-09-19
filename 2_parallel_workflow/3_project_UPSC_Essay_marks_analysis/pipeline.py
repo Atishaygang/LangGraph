@@ -3,7 +3,7 @@ from typing import TypedDict,Annotated
 import operator
 from state import UPSC_State
 from functions import eval_lang , eval_thg , eval_anl , final_eval
-from load_text import essay
+
 
 
 
@@ -33,13 +33,4 @@ workflow = graph.compile()
 
 
 
-result = workflow.invoke({
-    "essay": essay
-})
 
-final_result = {
-    "summary_feedback": result["overall_feedback"],
-    "avg_score": result["avg_score"],
-    "individual_score": result["individual_score"]
-}
-print(final_result)

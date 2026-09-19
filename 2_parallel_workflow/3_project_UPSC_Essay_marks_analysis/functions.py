@@ -1,5 +1,5 @@
 from llm_model import llm_model
-from load_text import essay
+
 from Evalutaion_pydatic_schema import parser
 from state import UPSC_State
 from langchain_core.prompts import PromptTemplate
